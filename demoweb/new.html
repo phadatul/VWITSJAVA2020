@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            var x = 10;
+            var y = 10;
+            $('button').click(function() {
+                x = x + 20;
+                y = y + 20;
+                $('img').width(x);
+                $('img').height(y);
+            });
+
+            $('h3').dblclick(function() {
+                $(this).replaceWith('<h1>THIS IS NEW HEADING</h1>');
+            });
+
+            $('li').click(function() {
+                $(this).remove();
+            });
+            $("#mydiv").mouseenter(function() {
+                $(this).css({
+                    "background-color": "green"
+                });
+            });
+            $("#mydiv").mouseleave(function() {
+                $(this).css({
+                    "background-color": "white"
+                });
+            });
+
+            $("#mydiv2").hover(function() {
+                    $(this).css({
+                        "background-color": "red"
+                    });
+                },
+                function() {
+                    $(this).css({
+                        "background-color": "white"
+                    });
+                });
+            $("input").focus(function() {
+                $(this).css("background-color", "#ff0000");
+            });
+            $("input").blur(function() {
+                $(this).css("background-color", "#ffffff");
+            });
+
+
+
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div>
+            <ul>
+                <li id="one">list item 1</li>
+                <li id="two">list item 2</li>
+                <li id="three">list item 3</li>
+                <li id="four">list item 4</li>
+                <li id="five">list item 5</li>
+                <li id="six">list item 6</li>
+            </ul>
+            <button>Okay</button>
+            <h3 id="heading1">Your image below</h3>
+            <img src="index.png" alt="AWS LOGO" height="100px" width="100px">
+            <div id="mydiv" style="width: 150px;width: 150px;">This is division</div>
+            <div id="mydiv2" style="width: 250px;width: 250px;">This is division</div>
+
+            <form>
+                <input type="text" /><br>
+                <input type="number" /> <br>
+                <input type="email" /> <br>
+                <input type="submit" </form>
+        </div>
+    </body>
+
+</html>
+
+</body>
+
+</html>

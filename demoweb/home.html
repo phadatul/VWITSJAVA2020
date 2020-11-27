@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+        function hello() {
+            document.getElementById("sample1").innerHTML = document.getElementById('txt').value;
+            document.getElementById('sample1').style.color = "red";
+            document.getElementById('sample2').style.color = "green";
+            document.getElementById('sample3').style.color = "yellow";
+            document.getElementById('sample4').style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txt" onchange="hello()" />
+    <button onclick="hello()">Okay</button>
+
+    <p id="sample1">Your text will appear here</p>
+    <p id="sample2">Your text will appear here</p>
+    <p id="sample3">Your text will appear here</p>
+    <p id="sample4">Your text will appear here</p>
+</body>
+
+</html>

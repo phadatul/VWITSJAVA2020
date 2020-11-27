@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(
+                function() {
+                    $("#para").hide();
+                    $("#para1").show();
+                    $("#para2").toggle();
+                }
+            );
+
+            $("#btn1").click(function() {
+                alert("button clicked")
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="para">Hello world</p>
+    <p id="para1" style="display: none;">This is hidden</p>
+    <p id="para2" style="display: none;">This is Toggle</p>
+
+    <button id="btn">Okay</button>
+
+    <button id="btn1">Okay</button>
+</body>
+
+</html>
