@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+	<class name="com.vwits.demo.Employee" table="myemployee">
+		<id name="empid" type="int">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="ename"></property>
+		<property name="salary"></property>
+
+	</class>
+
+
+</hibernate-mapping> 
